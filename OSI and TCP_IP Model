@@ -1,0 +1,69 @@
+OSI Model (Open Systems Interconnection Model) - It s a conceptual framework that standardizes how different networking systems communicate over a network. 
+OSI Model includes 7 layers, each with specific functions.
+
+7 Layers of the OSI Model
+
+Layer Name	                              Description
+
+1. Application Layer	                        Closest to the user. Provides services like web browsers, email, FTP. It interacts with software applications.
+2. Presentation Layer	                        Translates data between application and network (e.g., encryption, compression, encoding like JPEG, ASCII).
+3. Session Layer	                            Manages sessions or connections between computers (e.g., opening, managing, and closing sessions).
+4. Transport Layer	                          Ensures reliable data transfer (e.g., TCP for reliability, UDP for speed). Handles error recovery and flow control.
+5. Network Layer	                            Routes packets between different networks using IP addresses. (e.g., Routers, IP protocol).
+6. Data Link Layer	                          Handles communication between devices on the same network. Uses MAC addresses. (e.g., Switches, Ethernet).
+7. Physical Layer	                             Deals with physical transmission of raw bits (0s and 1s) over hardware like cables, switches, NICs.
+
+Example of Data Flow for sending mail
+
+Application – You write the email.
+Presentation – The message is encrypted.
+Session – A session is opened between your device and the mail server.
+Transport – The email is split into packets with TCP.
+Network – Each packet gets the IP address of the destination.
+Data Link – Packets are framed and given MAC addresses.
+Physical – Bits are transmitted over cables.
+
+
+TCP/IP model (Transmission Control Protocol/Internet Protocol) - It is the foundational communication model used for the Internet and modern networks. 
+ It defines how data is sent and received between systems over networks. TCS/IP model includes 4 layesr
+
+4 Layers of TCP/IP Model
+
+TCP/IP Layer       Description
+   
+1. Application        Supports application services like HTTP, FTP, DNS, SMTP, etc.
+2. Transport          Manages end-to-end communication, error handling (TCP, UDP).
+3. Internet           Responsible for logical addressing and routing (IP, ICMP).
+4. Network Access     Deals with physical transmission and hardware (MAC, Ethernet).
+
+TCP/IP Protocols Examples by Layer
+
+Application Layer: HTTP, HTTPS, FTP, SMTP, DNS, SNMP
+Transport Layer: TCP, UDP
+Internet Layer: IP, ICMP, ARP
+Network Access Layer: Ethernet, Wi-Fi, MAC
+
+Differences between OSI and TCP/IP model
+
+OSI Model (Open Systems Interconnection)                                                                        TCP/IP Model (Transmission Control Protocol/Internet Protocol)
+
+Developed By	ISO (International Organization for Standardization)                                               Developed By U.S. Department of Defense (DoD)
+OSI model includes 7 Layers                                                                                     TCP/IP model includes 4 layers      
+Application, Presentation, Session, Transport, Network, Data Link, Physical layers                              Application, Transport, Internet, Network Access layers
+Theoretical model used for teaching and design                                                                  Practical model used for real-world networking
+Protocol-independent                                                                                            Based on TCP/IP protocols
+More detailed, but more complex                                                                                 Simpler and faster for implementation
+Offers detailed error checking in layers                                                                        Relies on core protocols (like TCP) for reliability
+
+Layer Mapping of OSI vs TCP/IP
+
+   OSI Layer	             TCP/IP Layer
+
+7. Application	          Application
+6. Presentation       	  Application (combined)
+5. Session	              Application (combined)
+4. Transport	            Transport
+3. Network	              Internet
+2. Data Link	            Network Access
+1. Physical            	  Network Access
+
