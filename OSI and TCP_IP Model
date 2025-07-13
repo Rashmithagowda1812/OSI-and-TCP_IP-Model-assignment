@@ -6,12 +6,12 @@ OSI Model includes 7 layers, each with specific functions.
 Layer Name	                              Description
 
 1. Application Layer	                        Closest to the user. Provides services like web browsers, email, FTP. It interacts with software applications.
-2. Presentation Layer	                        Translates data between application and network (e.g., encryption, compression, encoding like JPEG, ASCII).
+2. Presentation Layer	                       Translates data between application and network (e.g., encryption, compression, encoding like JPEG, ASCII).
 3. Session Layer	                            Manages sessions or connections between computers (e.g., opening, managing, and closing sessions).
 4. Transport Layer	                          Ensures reliable data transfer (e.g., TCP for reliability, UDP for speed). Handles error recovery and flow control.
 5. Network Layer	                            Routes packets between different networks using IP addresses. (e.g., Routers, IP protocol).
 6. Data Link Layer	                          Handles communication between devices on the same network. Uses MAC addresses. (e.g., Switches, Ethernet).
-7. Physical Layer	                             Deals with physical transmission of raw bits (0s and 1s) over hardware like cables, switches, NICs.
+7. Physical Layer	                           Deals with physical transmission of raw bits (0s and 1s) over hardware like cables, switches, NICs.
 
 Example of Data Flow for sending mail
 
@@ -45,15 +45,15 @@ Network Access Layer: Ethernet, Wi-Fi, MAC
 
 Differences between OSI and TCP/IP model
 
-OSI Model (Open Systems Interconnection)                                                                        TCP/IP Model (Transmission Control Protocol/Internet Protocol)
+OSI Model (Open Systems Interconnection)                                                                    TCP/IP Model (Transmission Control Protocol/Internet Protocol)
 
-Developed By	ISO (International Organization for Standardization)                                               Developed By U.S. Department of Defense (DoD)
-OSI model includes 7 Layers                                                                                     TCP/IP model includes 4 layers      
-Application, Presentation, Session, Transport, Network, Data Link, Physical layers                              Application, Transport, Internet, Network Access layers
-Theoretical model used for teaching and design                                                                  Practical model used for real-world networking
-Protocol-independent                                                                                            Based on TCP/IP protocols
-More detailed, but more complex                                                                                 Simpler and faster for implementation
-Offers detailed error checking in layers                                                                        Relies on core protocols (like TCP) for reliability
+Developed By	ISO (International Organization for Standardization)                                            Developed By U.S. Department of Defense (DoD)
+OSI model includes 7 Layers                                                                                  TCP/IP model includes 4 layers      
+Application, Presentation, Session, Transport, Network, Data Link, Physical layers                           Application, Transport, Internet, Network Access layers
+Theoretical model used for teaching and design                                                               Practical model used for real-world networking
+Protocol-independent                                                                                         Based on TCP/IP protocols
+More detailed, but more complex                                                                              Simpler and faster for implementation
+Offers detailed error checking in layers                                                                     Relies on core protocols (like TCP) for reliability
 
 Layer Mapping of OSI vs TCP/IP
 
@@ -65,5 +65,5 @@ Layer Mapping of OSI vs TCP/IP
 4. Transport	            Transport
 3. Network	              Internet
 2. Data Link	            Network Access
-1. Physical            	  Network Access
+1. Physical            	 Network Access
 
